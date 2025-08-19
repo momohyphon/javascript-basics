@@ -42,4 +42,4 @@ console.log(name);
 let girlFriend;
 console.log(girlFriend);
 
-const girlFriend2;
+const girlFriend2 = 'jesica';
