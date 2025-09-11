@@ -31,5 +31,5 @@ console.log(_yujin);
  */
 
 //안유진
-const anYujin = '안유진';
-console.log(anYujin);
+const anYuJin = '안유진';
+console.log(anYuJin);
