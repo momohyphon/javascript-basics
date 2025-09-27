@@ -65,17 +65,17 @@ console.log(result, number)
 
 let sample = "99"
 console.log(+sample);
-console.log(typeof +sample)
+console.log(typeof +sample) //string에 +깂을 븥이면 숫자형태가 된다.
 
 console.log(sample);
 console.log(typeof sample)
 
 sample = true;
-console.log(+sample);
+console.log(+sample); //1이라는 값과 동일함.
 console.log(typeof +sample);
 
 sample =false;
-console.log(+false);
+console.log(+false); //0이라는 값과 동일함.
 console.log(typeof +sample);
 
 sample ='안유진';
@@ -85,3 +85,120 @@ console.log(+sample);
 sample = '99';
 console.log(-sample);
 console.log(typeof -sample);
+
+/**
+ * 할당 연산자 (assignment operateor)
+ */
+
+number = 100;
+console.log(number);
+
+number += 10 //할당 연산자 
+console.log(number)
+
+number -= 10;
+console.log(number);
+
+number *= 10;
+console.log(number);
+
+number /= 10;
+console.log(number);
+
+number %= 10;
+console.log(number);
+
+/**
+ * 비교 연산자
+ * 
+ * 1) 값의 비교
+ * 2)값과 타입의 비교
+ */
+console.log(5 == 5);
+console.log(5 == '5');
+console.log(0 == '');
+console.log(true == 1);
+console.log(false == 0);
+console.log(true == '1');
+
+
+console.log(5 === 5); //사용되는 비교 연산자
+console.log(5 === '5');
+
+console.log(5 === 5);
+console.log(5 === '5');
+console.log(0 === '');
+console.log(true === 1);
+console.log(false === 0);
+console.log(true === '1');
+
+console.log('---------------------');
+
+console.log(5 != 5);
+console.log(5 != '5');
+console.log(0 != '');
+console.log(true != 1);
+console.log(false != 0);
+console.log(true != '1');
+
+console.log('------------------');
+
+console.log(5 !== 5); //사용되는 비교연산자
+console.log(5 !== '5');
+console.log(0 !== '');
+console.log(true !== 1);
+console.log(false !== 0);
+console.log(true !== '1');
+
+console.log('---------------------');
+
+
+/**
+ * 
+ * 대소 관게 비교 연산자
+ */
+console.log(100 > 1);
+console.log(100 < 1);
+console.log(100 <= 1);
+console.log(100 >= 1);
+
+/**
+ * 삼항조건 연산자(ternary operator)
+ * 
+ */
+
+
+
+console.log(10 > 0 ? '10이 0보다 크다' : '10이 0보다 작다');
+
+
+
+console.log('--------------------');
+
+/**
+ * 논리연산자
+ * 
+ * 1) &&
+ * 2) ||
+ */
+// &&조건은 모두 true여야 true를 반환한다.
+console.log(true && true);
+console.log(true && false);
+console.log(false && true);
+console.log(false && false);
+
+// ||조건은 하나만 true여도true를 반환한다.
+
+console.log(true || true);
+console.log(true || false);
+console.log(false || true);
+console.log(false || false);
+
+console.log(10 > 1 && 20 > 1);
+console.log(10 < 1 && 20 > 1);
+console.log(10 < 1 && 20 < 1);
+
+console.log(10 > 1 || 20 > 1);
+console.log(10 < 1 || 20 > 1);
+console.log(10 < 1 || 20 < 1);
+
